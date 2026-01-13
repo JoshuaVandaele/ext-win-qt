@@ -1,0 +1,21 @@
+{
+    "schema_version": 2,
+    "name": "DeviceDiscoverySupportPrivate",
+    "repository": "qtbase",
+    "version": "6.10.1",
+    "internal": true,
+    "platforms": [
+        {
+            "name": "Windows",
+            "version": "6.2.9200",
+            "compiler_id": "MSVC",
+            "compiler_version": "19.50.35721.0",
+            "targets": [
+                {
+                    "architecture": "x86_64",
+                    "abi": "x86_64-little_endian-lp64"
+                }
+            ]
+        }
+    ]
+}

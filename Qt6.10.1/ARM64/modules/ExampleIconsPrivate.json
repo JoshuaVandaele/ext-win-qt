@@ -1,0 +1,21 @@
+{
+    "schema_version": 2,
+    "name": "ExampleIconsPrivate",
+    "repository": "qtbase",
+    "version": "6.10.1",
+    "internal": true,
+    "platforms": [
+        {
+            "name": "Windows",
+            "version": "10",
+            "compiler_id": "MSVC",
+            "compiler_version": "19.50.35721.0",
+            "targets": [
+                {
+                    "architecture": "arm64",
+                    "abi": "arm64-little_endian-lp64"
+                }
+            ]
+        }
+    ]
+}

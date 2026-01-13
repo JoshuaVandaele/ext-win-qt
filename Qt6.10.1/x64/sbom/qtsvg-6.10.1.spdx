@@ -1,0 +1,757 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: qtsvg-6.10.1
+DocumentNamespace: https://qt.io/spdxdocs/qtsvg-e4e92dd8+Qt6.10.1+dirty
+Creator: Organization: TheQtCompany
+Creator: Tool: Qt Build System
+CreatorComment: <text>This SPDX document was created from CMake 3.29.2, using the qt
+build system from https://code.qt.io/cgit/qt/qtbase.git/tree/cmake/QtPublicSbomHelpers.cmake</text>
+Created: 2026-01-14T18:36:57Z
+ExternalDocumentRef: DocumentRef-qtbase https://qt.io/spdxdocs/qtbase-e4e92dd8+Qt6.10.1+dirty SHA1: 00fc7e3192a133ecb6e4c5c58ad1df1885d9df17
+
+PackageName: MSVC
+SPDXID: SPDXRef-compiler
+PackageVersion: 19.50.35721.0
+PackageDownloadLocation: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageSupplier: Organization: Anonymous
+FilesAnalyzed: false
+PackageSummary: <text>The compiler as identified by CMake, running on Windows (AMD64)</text>
+PrimaryPackagePurpose: APPLICATION
+Relationship: SPDXRef-compiler BUILD_DEPENDENCY_OF SPDXRef-Package-qtsvg
+RelationshipComment: <text>SPDXRef-Package-qtsvg is built by compiler MSVC version 19.50.35721.0</text>
+
+PackageName: qtsvg
+SPDXID: SPDXRef-Package-qtsvg
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtsvg:6.10.1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtsvg@e4e92dd8+Qt6.10.1+dirty
+PackageVersion: e4e92dd8+Qt6.10.1+dirty
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtsvg@e4e92dd8+Qt6.10.1+dirty
+PackageSupplier: Organization: TheQtCompany
+PackageDownloadLocation: git://code.qt.io/qt/qtsvg.git@e4e92dd80e7c58aa4805d4e7e13065d4912857a7
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: Copyright (C) The Qt Company Ltd. and other contributors.
+PackageHomePage: https://qt.io
+PackageComment: <text>Built by CMake 3.29.2 with RelWithDebInfo;Debug configuration for Windows (AMD64)
+qtsvg was configured with:
+    qt6/configure -opensource -confirm-license -nomake examples -nomake tests -skip qt3d -skip qt5compat -skip qtactiveqt -skip qtcharts -skip qtcoap -skip qtconnectivity -skip qtdatavis3d -skip qtdeclarative -skip qtdoc -skip qtgraphs -skip qtgrpc -skip qthttpserver -skip qtimageformats -skip qtlanguageserver -skip qtlocation -skip qtlottie -skip qtmqtt -skip qtmultimedia -skip qtnetworkauth -skip qtopcua -skip qtpositioning -skip qtquick3d -skip qtquick3dphysics -skip qtquickeffectmaker -skip qtquicktimeline -skip qtremoteobjects -skip qtscxml -skip qtsensors -skip qtserialbus -skip qtserialport -skip qtshadertools -skip qtspeech -skip qttools -skip qttranslations -skip qtvirtualkeyboard -skip qtwayland -skip qtwebchannel -skip qtwebengine -skip qtwebsockets -skip qtwebview -no-feature-concurrent -no-feature-dbus -no-feature-gif -no-feature-ico -no-feature-imageformat_bmp -no-feature-jpeg -no-feature-network -no-feature-printsupport -no-feature-qmake -no-feature-sql -feature-style-windowsvista -no-feature-testlib -no-feature-textmarkdownreader -no-feature-textmarkdownwriter -no-feature-textodfwriter -no-feature-tiff -no-feature-webp -no-feature-xml -c++std c++2b -debug-and-release -force-debug-info -ltcg -no-opengl -no-pch -qt-zlib -prefix C:\Users\dolphin\Desktop\ext-win-qt\Qt6.10.1\dist\dolphin.x64_6.10.1 -platform win32-msvc -- -DCMAKE_ASM_FLAGS=/experimental:deterministic -DCMAKE_C_FLAGS=/experimental:deterministic -DCMAKE_CXX_FLAGS=/experimental:deterministic -DCMAKE_EXE_LINKER_FLAGS=/experimental:deterministic /INCREMENTAL:NO -DCMAKE_MODULE_LINKER_FLAGS=/experimental:deterministic /INCREMENTAL:NO -DCMAKE_SHARED_LINKER_FLAGS=/experimental:deterministic /INCREMENTAL:NO -DCMAKE_STATIC_LINKER_FLAGS=/experimental:deterministic -DFEATURE_msvc_obj_debug_info=ON
+</text>
+FilesAnalyzed: false
+BuiltDate: 2026-01-14T18:36:57Z
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-qtsvg
+
+PackageName: Svg_Attribution_xsvg
+SPDXID: SPDXRef-Package-qtsvg-qt-3rdparty-sources-Svg-Attribution-xsvg
+PackageDownloadLocation: NOASSERTION
+PackageVersion: unknown
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: HPND-sell-variant
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtsvg@e4e92dd8?library_name=Svg_Attribution_xsvg#src/svg
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtsvg-Svg_Attribution_xsvg@e4e92dd8?vcs_url=https://code.qt.io/qt/qtsvg.git@e4e92dd8&library_name=Svg_Attribution_xsvg#src/svg
+PackageCopyrightText: <text>Copyright 2002 USC/Information Sciences Institute</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: Svg_Attribution_xsvg
+    Information extracted from:
+     /src_dir/qtsvg/src/svg/qt_attribution.json
+    Entry index: 0
+    Id: xsvg
+    Name: XSVG
+    Description: Some code for arc handling is derived from code from the XSVG project.
+    Qt usage: Used in the Qt SVG library.
+    License: Historical Permission Notice and Disclaimer - sell variant
+    License file: LICENSE.XSVG.txt
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.10.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtsvg:6.10.1:*:*:*:*:*:*:*
+FilesAnalyzed: false
+Relationship: SPDXRef-Package-qtsvg CONTAINS SPDXRef-Package-qtsvg-qt-3rdparty-sources-Svg-Attribution-xsvg
+
+PackageName: Svg
+SPDXID: SPDXRef-Package-qtsvg-qt-module-Svg
+PackageDownloadLocation: git://code.qt.io/qt/qtsvg.git@e4e92dd80e7c58aa4805d4e7e13065d4912857a7
+PackageVersion: 6.10.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtsvg@e4e92dd8?library_name=Svg#src/svg
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtsvg-Svg@e4e92dd8?vcs_url=https://code.qt.io/qt/qtsvg.git@e4e92dd8&library_name=Svg#src/svg
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: Svg
+CMake exported target name: Qt6::Svg
+Contained in CMake package: Qt6Svg
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.10.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtsvg:6.10.1:*:*:*:*:*:*:*
+PackageVerificationCode: 5d00eee963ec55f6c6298374dd8b56c22b8f202c
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtsvg-qt-module-Svg DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qtsvg-qt-module-Svg DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Gui
+Relationship: SPDXRef-Package-qtsvg-qt-module-Svg DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformModuleInternal
+Relationship: SPDXRef-Package-qtsvg-qt-module-Svg DEPENDS_ON SPDXRef-Package-qtsvg-qt-3rdparty-sources-Svg-Attribution-xsvg
+Relationship: SPDXRef-Package-qtsvg CONTAINS SPDXRef-Package-qtsvg-qt-module-Svg
+
+FileName: ./bin/Qt6Svg.dll
+SPDXID: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo
+FileType: BINARY
+FileChecksum: SHA1: ebcdd12b0fcb0d836638fd47cab930da07e46095
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-module-Svg CONTAINS SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtsvg/src/svg/Svg_resource-RelWithDebInfo.rc
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtbase/include/QtSvg/qtsvgexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfont.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfont_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggenerator.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggenerator.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggraphics.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggraphics_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgnode.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgnode_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgrenderer.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgrenderer.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstructure.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstructure_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfilter.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfilter_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstyle.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstyle_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgtinydocument.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgtinydocument_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvganimate.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvganimate_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghelper_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgdebug.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgvisitor.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgvisitor_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qtsvgglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qtsvgglobal_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimator.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimator_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgabstractanimation.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgabstractanimation_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimatedproperty.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimatedproperty_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgcssanimation.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgcssanimation_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgutils_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgutils.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcsshandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcsshandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgstyleselector.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgstyleselector_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcssproperties.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcssproperties_p.h
+
+FileName: ./bin/Qt6Svgd.dll
+SPDXID: SPDXRef-PackagedFile-qt-module-Svg-Debug
+FileType: BINARY
+FileChecksum: SHA1: ca7455995719b2c435b90c2d17f94ccbd10d76ac
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-module-Svg CONTAINS SPDXRef-PackagedFile-qt-module-Svg-Debug
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtsvg/src/svg/Svg_resource-Debug.rc
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtbase/include/QtSvg/qtsvgexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfont.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfont_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggenerator.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggenerator.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggraphics.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggraphics_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgnode.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgnode_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgrenderer.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgrenderer.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstructure.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstructure_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfilter.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfilter_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstyle.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstyle_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgtinydocument.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgtinydocument_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvganimate.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvganimate_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghelper_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgdebug.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgvisitor.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgvisitor_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qtsvgglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qtsvgglobal_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimator.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimator_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgabstractanimation.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgabstractanimation_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimatedproperty.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimatedproperty_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgcssanimation.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgcssanimation_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgutils_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgutils.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcsshandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcsshandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgstyleselector.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgstyleselector_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcssproperties.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcssproperties_p.h
+
+FileName: ./lib/Qt6Svg.lib
+SPDXID: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo
+FileType: BINARY
+FileChecksum: SHA1: a569cc09ad592402f22fcf158ebb26e33aaaac38
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-module-Svg CONTAINS SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtsvg/src/svg/Svg_resource-RelWithDebInfo.rc
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtbase/include/QtSvg/qtsvgexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfont.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfont_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggenerator.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggenerator.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggraphics.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggraphics_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgnode.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgnode_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgrenderer.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgrenderer.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstructure.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstructure_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfilter.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfilter_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstyle.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstyle_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgtinydocument.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgtinydocument_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvganimate.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvganimate_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghelper_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgdebug.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgvisitor.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgvisitor_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qtsvgglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qtsvgglobal_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimator.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimator_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgabstractanimation.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgabstractanimation_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimatedproperty.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimatedproperty_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgcssanimation.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgcssanimation_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgutils_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgutils.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcsshandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcsshandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgstyleselector.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgstyleselector_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcssproperties.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcssproperties_p.h
+
+FileName: ./lib/Qt6Svgd.lib
+SPDXID: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug
+FileType: BINARY
+FileChecksum: SHA1: fcec94a1439d5f145ea07dc7897747957d7374af
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-module-Svg CONTAINS SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtsvg/src/svg/Svg_resource-Debug.rc
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtbase/include/QtSvg/qtsvgexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfont.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfont_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggenerator.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggenerator.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggraphics.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvggraphics_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgnode.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgnode_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgrenderer.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgrenderer.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstructure.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstructure_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfilter.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgfilter_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstyle.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgstyle_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgtinydocument.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgtinydocument_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvganimate.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvganimate_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvghelper_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgdebug.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgvisitor.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgvisitor_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qtsvgglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qtsvgglobal_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimator.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimator_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgabstractanimation.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgabstractanimation_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimatedproperty.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvganimatedproperty_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgcssanimation.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/animation/qsvgcssanimation_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgutils_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/qsvgutils.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcsshandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcsshandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgstyleselector.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgstyleselector_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcssproperties.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-Svg-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svg/css/qsvgcssproperties_p.h
+
+PackageName: QSvgIconPlugin
+SPDXID: SPDXRef-Package-qtsvg-qt-plugin-QSvgIconPlugin
+PackageDownloadLocation: git://code.qt.io/qt/qtsvg.git@e4e92dd80e7c58aa4805d4e7e13065d4912857a7
+PackageVersion: 6.10.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtsvg@e4e92dd8?library_name=QSvgIconPlugin#src/plugins/iconengines/svgiconengine
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtsvg-QSvgIconPlugin@e4e92dd8?vcs_url=https://code.qt.io/qt/qtsvg.git@e4e92dd8&library_name=QSvgIconPlugin#src/plugins/iconengines/svgiconengine
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: QSvgIconPlugin
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.10.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtsvg:6.10.1:*:*:*:*:*:*:*
+PackageVerificationCode: 8246867b104a076c655ea3804955ec9a34884dfb
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgIconPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgIconPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Gui
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgIconPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgIconPlugin DEPENDS_ON SPDXRef-Package-qtsvg-qt-module-Svg
+Relationship: SPDXRef-Package-qtsvg CONTAINS SPDXRef-Package-qtsvg-qt-plugin-QSvgIconPlugin
+
+FileName: ./plugins/iconengines/qsvgicon.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-RelWithDebInfo
+FileType: BINARY
+FileChecksum: SHA1: 68c49ed5a62ba08b39de6bfbd29e90f8d9ad0361
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgIconPlugin CONTAINS SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-RelWithDebInfo
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/iconengines/svgiconengine/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/iconengines/svgiconengine/qsvgiconengine.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/iconengines/svgiconengine/qsvgiconengine.h
+
+FileName: ./plugins/iconengines/qsvgicond.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-Debug
+FileType: BINARY
+FileChecksum: SHA1: 58a6004e6ed8be04c1d6a4c54e76928a50213af0
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgIconPlugin CONTAINS SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-Debug
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/iconengines/svgiconengine/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/iconengines/svgiconengine/qsvgiconengine.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgIconPlugin-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/iconengines/svgiconengine/qsvgiconengine.h
+
+PackageName: QSvgPlugin
+SPDXID: SPDXRef-Package-qtsvg-qt-plugin-QSvgPlugin
+PackageDownloadLocation: git://code.qt.io/qt/qtsvg.git@e4e92dd80e7c58aa4805d4e7e13065d4912857a7
+PackageVersion: 6.10.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtsvg@e4e92dd8?library_name=QSvgPlugin#src/plugins/imageformats/svg
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtsvg-QSvgPlugin@e4e92dd8?vcs_url=https://code.qt.io/qt/qtsvg.git@e4e92dd8&library_name=QSvgPlugin#src/plugins/imageformats/svg
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: QSvgPlugin
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.10.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtsvg:6.10.1:*:*:*:*:*:*:*
+PackageVerificationCode: 29d0d1e0cfa60943a78b2f39e3b368125b1c73f5
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Gui
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgPlugin DEPENDS_ON SPDXRef-Package-qtsvg-qt-module-Svg
+Relationship: SPDXRef-Package-qtsvg CONTAINS SPDXRef-Package-qtsvg-qt-plugin-QSvgPlugin
+
+FileName: ./plugins/imageformats/qsvg.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-RelWithDebInfo
+FileType: BINARY
+FileChecksum: SHA1: 6abce96bdcd2e2cf79b458e8fe9d11bf21d25276
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgPlugin CONTAINS SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-RelWithDebInfo
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/imageformats/svg/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/imageformats/svg/qsvgiohandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/imageformats/svg/qsvgiohandler.h
+
+FileName: ./plugins/imageformats/qsvgd.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-Debug
+FileType: BINARY
+FileChecksum: SHA1: efe12cf2bde28f33bf2b1bb2e37b22d7ffa11488
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-plugin-QSvgPlugin CONTAINS SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-Debug
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/imageformats/svg/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/imageformats/svg/qsvgiohandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QSvgPlugin-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/plugins/imageformats/svg/qsvgiohandler.h
+
+PackageName: SvgWidgets
+SPDXID: SPDXRef-Package-qtsvg-qt-module-SvgWidgets
+PackageDownloadLocation: git://code.qt.io/qt/qtsvg.git@e4e92dd80e7c58aa4805d4e7e13065d4912857a7
+PackageVersion: 6.10.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtsvg@e4e92dd8?library_name=SvgWidgets#src/svgwidgets
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtsvg-SvgWidgets@e4e92dd8?vcs_url=https://code.qt.io/qt/qtsvg.git@e4e92dd8&library_name=SvgWidgets#src/svgwidgets
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: SvgWidgets
+CMake exported target name: Qt6::SvgWidgets
+Contained in CMake package: Qt6SvgWidgets
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.10.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtsvg:6.10.1:*:*:*:*:*:*:*
+PackageVerificationCode: dbe4fabe7ba566bb780fad87ac17cbbdaf379316
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Gui
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Widgets
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformModuleInternal
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets DEPENDS_ON SPDXRef-Package-qtsvg-qt-module-Svg
+Relationship: SPDXRef-Package-qtsvg CONTAINS SPDXRef-Package-qtsvg-qt-module-SvgWidgets
+
+FileName: ./bin/Qt6SvgWidgets.dll
+SPDXID: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo
+FileType: BINARY
+FileChecksum: SHA1: 99a0d41ceec5d058293b2301077ca905f306bcee
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets CONTAINS SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtsvg/src/svgwidgets/SvgWidgets_resource-RelWithDebInfo.rc
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtbase/include/QtSvgWidgets/qtsvgwidgetsexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qsvgwidget.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qsvgwidget.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qtsvgwidgetsglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qgraphicssvgitem.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qgraphicssvgitem.h
+
+FileName: ./bin/Qt6SvgWidgetsd.dll
+SPDXID: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug
+FileType: BINARY
+FileChecksum: SHA1: 1f0389aa01b47dcb44f99a8d4100874bc4e877b7
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets CONTAINS SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtsvg/src/svgwidgets/SvgWidgets_resource-Debug.rc
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtbase/include/QtSvgWidgets/qtsvgwidgetsexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qsvgwidget.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qsvgwidget.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qtsvgwidgetsglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qgraphicssvgitem.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qgraphicssvgitem.h
+
+FileName: ./lib/Qt6SvgWidgets.lib
+SPDXID: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo
+FileType: BINARY
+FileChecksum: SHA1: 3210c45854390c307f761e1d2a81ba895ac5a89f
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets CONTAINS SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtsvg/src/svgwidgets/SvgWidgets_resource-RelWithDebInfo.rc
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtbase/include/QtSvgWidgets/qtsvgwidgetsexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qsvgwidget.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qsvgwidget.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qtsvgwidgetsglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qgraphicssvgitem.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-RelWithDebInfo GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qgraphicssvgitem.h
+
+FileName: ./lib/Qt6SvgWidgetsd.lib
+SPDXID: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug
+FileType: BINARY
+FileChecksum: SHA1: 5418aa370b09bc947df98c9df42b90778a01eea6
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtsvg-qt-module-SvgWidgets CONTAINS SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtsvg/src/svgwidgets/SvgWidgets_resource-Debug.rc
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: C:/Users/dolphin/Desktop/ext-win-qt/Qt6.10.1/6.10.1_dolphin.x64.build/qtbase/include/QtSvgWidgets/qtsvgwidgetsexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qsvgwidget.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qsvgwidget.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qtsvgwidgetsglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qgraphicssvgitem.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-SvgWidgets-ImportLibrary-Debug GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtsvg/src/svgwidgets/qgraphicssvgitem.h
+
+LicenseID: LicenseRef-Qt-Commercial
+ExtractedText: <text>Licensees holding valid commercial Qt licenses may use this software in
+accordance with the the terms contained in a written agreement between
+you and The Qt Company. Alternatively, the terms and conditions that were
+accepted by the licensee when buying and/or downloading the
+software do apply.
+
+For the latest licensing terms and conditions, see https://www.qt.io/terms-conditions.
+For further information use the contact form at https://www.qt.io/contact-us.
+</text>
