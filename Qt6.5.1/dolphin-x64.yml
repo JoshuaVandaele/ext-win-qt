@@ -9,7 +9,7 @@ compiler:
     vcvarsall: x64
 
 configure:
-    additional_parameters: -c++std c++2b -debug-and-release -force-debug-info -ltcg -no-opengl -no-pch
+    additional_parameters: -c++std c++2b -debug-and-release -force-debug-info -ltcg -no-opengl -no-pch -qt-zlib
     nomake:
         - examples
         - tests
@@ -58,7 +58,7 @@ configure:
         gif: false
         ico: false
         imageformat_bmp: false
-        jpeg: false
+        jpeg: true
         network: false
         printsupport: false
         qmake: false

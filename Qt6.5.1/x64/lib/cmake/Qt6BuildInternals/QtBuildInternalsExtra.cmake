@@ -42,7 +42,7 @@ endfunction()
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT AND
         NOT QT_BUILD_INTERNALS_NO_FORCE_SET_INSTALL_PREFIX
         AND NOT QT_SUPERBUILD)
-    set(qtbi_orig_prefix "E:/qsc/dist/dolphin.x64_6.5.1")
+    set(qtbi_orig_prefix "C:/Users/dolphin/Desktop/qsc/dist/dolphin.x64_6.5.1")
     set(qtbi_orig_staging_prefix "")
     qt_internal_new_prefix(qtbi_new_prefix
         "${QT_BUILD_INTERNALS_RELOCATABLE_INSTALL_PREFIX}"
@@ -74,7 +74,7 @@ endif()
 set(QT_WILL_INSTALL ON CACHE BOOL
     "Boolean indicating if doing a Qt prefix build (vs non-prefix build)." FORCE)
 
-set(QT_SOURCE_TREE "E:/qsc/qt-everywhere-src-6.5.1/qtbase" CACHE PATH
+set(QT_SOURCE_TREE "C:/Users/dolphin/Desktop/qsc/qt-everywhere-src-6.5.1/qtbase" CACHE PATH
 "A path to the source tree of the previously configured QtBase project." FORCE)
 
 # Propagate decision of building tests and examples to other repositories.

@@ -22,53 +22,53 @@
 
 #define QT_FEATURE_no_direct_extern_access -1
 
-#define QT_FEATURE_x86intrin -1
+#define QT_FEATURE_x86intrin 1
 
-#define QT_FEATURE_sse2 -1
+#define QT_FEATURE_sse2 1
 
-#define QT_FEATURE_sse3 -1
+#define QT_FEATURE_sse3 1
 
-#define QT_FEATURE_ssse3 -1
+#define QT_FEATURE_ssse3 1
 
-#define QT_FEATURE_sse4_1 -1
+#define QT_FEATURE_sse4_1 1
 
-#define QT_FEATURE_sse4_2 -1
+#define QT_FEATURE_sse4_2 1
 
-#define QT_FEATURE_avx -1
+#define QT_FEATURE_avx 1
 
-#define QT_FEATURE_f16c -1
+#define QT_FEATURE_f16c 1
 
-#define QT_FEATURE_avx2 -1
+#define QT_FEATURE_avx2 1
 
-#define QT_FEATURE_avx512f -1
+#define QT_FEATURE_avx512f 1
 
-#define QT_FEATURE_avx512er -1
+#define QT_FEATURE_avx512er 1
 
-#define QT_FEATURE_avx512cd -1
+#define QT_FEATURE_avx512cd 1
 
-#define QT_FEATURE_avx512pf -1
+#define QT_FEATURE_avx512pf 1
 
-#define QT_FEATURE_avx512dq -1
+#define QT_FEATURE_avx512dq 1
 
-#define QT_FEATURE_avx512bw -1
+#define QT_FEATURE_avx512bw 1
 
-#define QT_FEATURE_avx512vl -1
+#define QT_FEATURE_avx512vl 1
 
-#define QT_FEATURE_avx512ifma -1
+#define QT_FEATURE_avx512ifma 1
 
-#define QT_FEATURE_avx512vbmi -1
+#define QT_FEATURE_avx512vbmi 1
 
-#define QT_FEATURE_avx512vbmi2 -1
+#define QT_FEATURE_avx512vbmi2 1
 
-#define QT_FEATURE_aesni -1
+#define QT_FEATURE_aesni 1
 
-#define QT_FEATURE_vaes -1
+#define QT_FEATURE_vaes 1
 
-#define QT_FEATURE_rdrnd -1
+#define QT_FEATURE_rdrnd 1
 
-#define QT_FEATURE_rdseed -1
+#define QT_FEATURE_rdseed 1
 
-#define QT_FEATURE_shani -1
+#define QT_FEATURE_shani 1
 
 #define QT_FEATURE_mips_dsp -1
 

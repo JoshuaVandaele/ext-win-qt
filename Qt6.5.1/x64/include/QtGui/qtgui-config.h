@@ -18,7 +18,7 @@
 
 #define QT_FEATURE_opengl -1
 
-#define QT_FEATURE_vulkan 1
+#define QT_FEATURE_vulkan -1
 
 #define QT_FEATURE_openvg -1
 
@@ -112,6 +112,5 @@
 #define QT_NO_EGL 1
 #define QT_NO_IMAGEFORMAT_GIF
 #define QT_NO_ICO 1
-#define QT_NO_IMAGEFORMAT_JPEG
 #define QT_NO_TEXTODFWRITER 1
 #define QT_NO_IMAGEFORMAT_BMP 1
