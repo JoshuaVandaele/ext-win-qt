@@ -1,0 +1,96 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja Multi-Config",
+      "toolchainFile": "${sourceDir}/QtToolchain.cmake",
+      "cacheVariables": {
+        "CMAKE_CONFIGURATION_TYPES": "Release;Debug"
+      }
+    },
+    {
+      "name": "qt-x64",
+      "inherits": ["base"],
+      "binaryDir": "${sourceDir}/build/x64/",
+      "installDir": "${sourceDir}/install/${hostSystemName}/x64/",
+      "environment": {"TGT_ARCH": "x64"}
+    },
+    {
+      "name": "qt-arm64",
+      "inherits": ["base"],
+      "binaryDir": "${sourceDir}/build/arm64/",
+      "installDir": "${sourceDir}/install/${hostSystemName}/arm64/",
+      "environment": {"TGT_ARCH": "arm64"}
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "qt-x64-release",
+      "configurePreset": "qt-x64",
+      "configuration": "Release"
+    },
+    {
+      "name": "qt-x64-debug",
+      "configurePreset": "qt-x64",
+      "configuration": "Debug"
+    },
+    {
+      "name": "qt-x64-install-release",
+      "configurePreset": "qt-x64",
+      "configuration": "Release",
+      "targets": ["install"]
+    },
+    {
+      "name": "qt-x64-install-debug",
+      "configurePreset": "qt-x64",
+      "configuration": "Debug",
+      "targets": ["install"]
+    },
+    {
+      "name": "qt-arm64-release",
+      "configurePreset": "qt-arm64",
+      "configuration": "Release"
+    },
+    {
+      "name": "qt-arm64-debug",
+      "configurePreset": "qt-arm64",
+      "configuration": "Debug"
+    },
+    {
+      "name": "qt-arm64-install-release",
+      "configurePreset": "qt-arm64",
+      "configuration": "Release",
+      "targets": ["install"]
+    },
+    {
+      "name": "qt-arm64-install-debug",
+      "configurePreset": "qt-arm64",
+      "configuration": "Debug",
+      "targets": ["install"]
+    }
+  ],
+  "workflowPresets": [
+    {
+      "name": "qt-x64",
+      "steps": [
+        { "type": "configure", "name": "qt-x64" },
+        { "type": "build", "name": "qt-x64-release" },
+        { "type": "build", "name": "qt-x64-install-release" },
+        { "type": "build", "name": "qt-x64-debug" },
+        { "type": "build", "name": "qt-x64-install-debug" }
+      ]
+    },
+    {
+      "name": "qt-arm64",
+      "steps": [
+        { "type": "configure", "name": "qt-arm64" },
+        { "type": "build", "name": "qt-arm64-release" },
+        { "type": "build", "name": "qt-arm64-install-release" },
+        { "type": "build", "name": "qt-arm64-debug" },
+        { "type": "build", "name": "qt-arm64-install-debug" }
+      ]
+    }
+  ]
+}
