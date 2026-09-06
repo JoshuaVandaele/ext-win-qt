@@ -1,0 +1,5 @@
+QMAKE_INCDIR_LIBPNG = C:/Users/admin/Desktop/ext-win-qt-/build/x64/_deps/qt-meta-src/qtbase/src/3rdparty/libpng
+QMAKE_DEFINES_LIBPNG = 
+QMAKE_LIBS_LIBPNG_DEBUG = $$[QT_INSTALL_LIBS/get]/Qt6BundledLibpngd.lib
+QMAKE_LIBS_LIBPNG_RELEASE = $$[QT_INSTALL_LIBS/get]/Qt6BundledLibpng.lib
+QMAKE_LIBS_LIBPNG_RELEASE = $$[QT_INSTALL_LIBS/get]/Qt6BundledLibpng_relwithdebinfo.lib

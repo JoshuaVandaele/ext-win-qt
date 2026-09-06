@@ -34,6 +34,7 @@ set(QT_BUILD_TESTS OFF)
 set(QT_BUILD_EXAMPLES OFF)
 set(QT_UNITY_BUILD ON)
 # Trim Qt to just what Dolphin needs.
+set(FEATURE_debug_and_release ON)
 set(INPUT_opengl no)
 set(FEATURE_vulkan OFF)
 set(FEATURE_direct2d1_1 OFF)

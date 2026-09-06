@@ -3,11 +3,8 @@
   "configurePresets": [
     {
       "name": "base",
-      "generator": "Ninja",
+      "generator": "Ninja Multi-Config",
       "toolchainFile": "${sourceDir}/QtToolchain.cmake",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
-      },
       "hidden": true
     },
     {
