@@ -1,0 +1,5 @@
+build/
+
+# Qt does not create portable binaries on these platforms
+x64/Linux
+x64/Darwin

@@ -1,0 +1,54 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "base",
+      "generator": "Ninja",
+      "toolchainFile": "${sourceDir}/QtToolchain.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      },
+      "hidden": true
+    },
+    {
+      "name": "qt-x64",
+      "inherits": ["base"],
+      "binaryDir": "${sourceDir}/build/x64/",
+      "installDir": "${sourceDir}/${hostSystemName}/x64/",
+      "environment": {"TGT_ARCH": "x64"}
+    },
+    {
+      "name": "qt-arm64",
+      "inherits": ["base"],
+      "binaryDir": "${sourceDir}/build/ARM64/",
+      "installDir": "${sourceDir}/${hostSystemName}/ARM64/",
+      "environment": {"TGT_ARCH": "ARM64"}
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "qt-x64",
+      "configurePreset": "qt-x64"
+    },
+    {
+      "name": "qt-arm64",
+      "configurePreset": "qt-arm64"
+    }
+  ],
+  "workflowPresets": [
+    {
+      "name": "qt-x64",
+      "steps": [
+        { "type": "configure", "name": "qt-x64" },
+        { "type": "build", "name": "qt-x64" }
+      ]
+    },
+    {
+      "name": "qt-arm64",
+      "steps": [
+        { "type": "configure", "name": "qt-arm64" },
+        { "type": "build", "name": "qt-arm64" }
+      ]
+    }
+  ]
+}
