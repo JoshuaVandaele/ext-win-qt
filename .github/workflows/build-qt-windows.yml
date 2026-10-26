@@ -1,0 +1,79 @@
+name: Build Qt for Windows
+
+on:
+  push:
+    tags:
+      - '**'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Qt ${{ matrix.arch }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: x64
+            runner: windows-2025
+          - arch: arm64
+            runner: windows-11-arm
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up MSVC environment
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: ${{ matrix.arch }}
+
+      - name: Build Qt
+        shell: pwsh
+        env:
+          CC: cl
+          CXX: cl
+        run: cmake --workflow --preset qt-${{ matrix.arch }}
+
+      - name: Upload Qt
+        uses: actions/upload-artifact@v7
+        with:
+          name: qt-windows-${{ matrix.arch }}
+          path: install/Windows/${{ matrix.arch }}
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload Qt symbols
+        uses: actions/upload-artifact@v7
+        with:
+          name: qt-windows-${{ matrix.arch }}-symbols
+          path: build/${{ matrix.arch }}/pdb
+          if-no-files-found: ignore
+          retention-days: 30
+
+  release:
+    name: Publish release
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: artifacts
+
+      - name: Package
+        run: |
+          cd artifacts
+          for d in */; do
+            d=${d%/}
+            (cd "$d" && 7z a -t7z -m0=lzma2 -mx=9 -ms=on -mmt=on "../$d.7z" . > /dev/null)
+          done
+          ls -lh *.7z
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${{ github.ref_name }}" artifacts/*.7z --generate-notes
