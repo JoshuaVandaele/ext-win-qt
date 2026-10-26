@@ -28,10 +28,6 @@ if(QT_HOST_PATH AND NOT EXISTS "${QT_HOST_PATH}")
   "Please build and install the host Qt first.")
 endif()
 
-# Force fat objects for gcc so that linkers other than GNU's can consume them
-add_compile_options($<$<COMPILE_LANG_AND_ID:CXX,GNU>:-ffat-lto-objects>)
-
-set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ON)
 set(BUILD_SHARED_LIBS OFF)
 set(QT_MODULES qtbase qtsvg)
 set(QT_BUILD_TESTS OFF)
